@@ -131,7 +131,7 @@
       <div class="logo">peppermint.<span class="logo-thin">engineering</span></div>
         <div class="content">
             <h1>Engineering the future</h1>
-            <h2>One AI prompt at a time.</h2>
+            <h2 id="typed-output"></h2>
             <p>We're working on something exciting. Sign up to be the first to know when we launch.</p>
             <form class="email-form" action="https://formspree.io/f/mnnapqor" method="POST">
                 <input type="email" name="email" placeholder="Enter your email address" required>
@@ -144,5 +144,14 @@
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed('#typed-output', {
+            strings: ["One AI prompt at a time."],
+            typeSpeed: 100,
+            startDelay: 500,
+            showCursor: true
+        });
+    </script>
 </body>
 </html>
