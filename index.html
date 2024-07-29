@@ -1,165 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Peppermint Engineering</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap");
 
-        :root {
-            --primary: #00DC82;
-            --bg: #0F172A;
-            --text: #E2E8F0;
-        }
+      :root {
+        --primary: #00dc82;
+        --bg: #0f172a;
+        --text: #e2e8f0;
+      }
 
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            font-family: 'Inter', sans-serif;
-            background-color: var(--bg);
-            color: var(--text);
-            background: url('cube.jpg') no-repeat center center fixed;
-            background-size: cover;
-        }
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: "Inter", sans-serif;
+        background-color: var(--bg);
+        color: var(--text);
+        background: url("cube.jpg") no-repeat center center fixed;
+        background-size: cover;
+      }
 
-        .container {
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-            padding: 3rem;
-            box-sizing: border-box;
-            background-color: rgba(0, 0, 0, 0.4); /* Darker overlay */            
-        }
+      .container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 3rem;
+        box-sizing: border-box;
+        background-color: rgba(0, 0, 0, 0.4); /* Darker overlay */
+      }
 
-        .content {
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            max-width: 550px;
-            margin: 0 auto;
-        }
+      .content {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 550px;
+        margin: 0 auto;
+      }
 
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin-bottom: 3rem;
-            color: var(--primary);
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-        }
-        .logo-thin {
-            font-weight: 200;
-        }
+      .logo {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 3rem;
+        color: var(--primary);
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+      }
+      .logo-thin {
+        font-weight: 200;
+      }
 
-        h1 {
-            font-size: 3rem;
-            font-weight: 600;
-            margin: 0;
-            margin-bottom: 0.5rem;
-            line-height: 1.2;
-            text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
-        }
-        h2 {
-            font-size: 2.5rem;
-            color: #00DC82;
-            font-weight: 200;
-            margin: 0;
-            margin-bottom: 1.5rem;
-            line-height: 1.2;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }        
+      h1 {
+        font-size: 3rem;
+        font-weight: 600;
+        margin: 0;
+        margin-bottom: 0.5rem;
+        line-height: 1.2;
+        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+      }
+      h2 {
+        font-size: 2.5rem;
+        color: #00dc82;
+        font-weight: 200;
+        margin: 0;
+        margin-bottom: 1.5rem;
+        line-height: 1.2;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
 
-        p {
-            font-size: 1rem;
-            margin-bottom: 1rem;
-            line-height: 1.5;
-            color: #ccd0d7;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-        }
+      p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        line-height: 1.5;
+        color: #ccd0d7;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+      }
 
-        .email-form {
-            display: flex;
-            margin-bottom: 2rem;
-        }
+      .email-form {
+        display: flex;
+        margin-bottom: 2rem;
+      }
 
-        input[type="email"] {
-            flex-grow: 1;
-            padding: 0.75rem 1rem;
-            font-size: 1rem;
-            border: 1px solid #2D3748;
-            background-color: #1E293B;
-            color: var(--text);
-            border-radius: 4px 0 0 4px;
-        }
+      input[type="email"] {
+        flex-grow: 1;
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+        border: 1px solid #2d3748;
+        background-color: #1e293b;
+        color: var(--text);
+        border-radius: 4px 0 0 4px;
+      }
 
-        button {
-            padding: 0.75rem 1.5rem;
-            font-size: 1rem;
-            border: none;
-            background-color: var(--primary);
-            color: var(--bg);
-            font-weight: 600;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            border-radius: 0 4px 4px 0;
-        }
+      button {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+        border: none;
+        background-color: var(--primary);
+        color: var(--bg);
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        border-radius: 0 4px 4px 0;
+      }
 
-        button:hover {
-            background-color: #00C974;
-        }
+      button:hover {
+        background-color: #00c974;
+      }
 
-        .social-links {
-            display: flex;
-            gap: 1rem;
-        }
+      .social-links {
+        display: flex;
+        gap: 1rem;
+      }
 
-        .social-links a {
-            color: #64748B;
-            text-decoration: none;
-            font-size: 0.875rem;
-        }
+      .social-links a {
+        color: #64748b;
+        text-decoration: none;
+        font-size: 0.875rem;
+      }
 
-        .social-links a:hover {
-            color: var(--primary);
-        }
+      .social-links a:hover {
+        color: var(--primary);
+      }
     </style>
-</head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3N0JHRC8ZP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-3N0JHRC8ZP"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-  gtag('config', 'G-3N0JHRC8ZP');
-</script>
-<body>
+    gtag("config", "G-3N0JHRC8ZP");
+  </script>
+  <body>
     <div class="container">
-      <div class="logo">peppermint.<span class="logo-thin">engineering</span></div>
-        <div class="content">
-            <h1>Engineering the future</h1>
-            <h2 id="typed-output"></h2>
-            <p>We're working on something exciting. Sign up to be the first to know when we launch.</p>
-            <form class="email-form" action="https://formspree.io/f/mnnapqor" method="POST">
-                <input type="email" name="email" placeholder="Enter your email address" required>
-                <button type="submit">Notify Me</button>
-            </form>
-            <div class="social-links">
-                <a href="#">Twitter</a>
-                <a href="#">LinkedIn</a>
-                <a href="#">GitHub</a>
-            </div>
+      <div class="logo">
+        peppermint.<span class="logo-thin">engineering</span>
+      </div>
+      <div class="content">
+        <h1>Engineering the future</h1>
+        <h2 id="typed-output"></h2>
+        <p>
+          We're working on something exciting. Sign up to be the first to know
+          when we launch.
+        </p>
+        <form
+          class="email-form"
+          action="https://formspree.io/f/mnnapqor"
+          method="POST"
+        >
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email address"
+            required
+          />
+          <button type="submit">Notify Me</button>
+        </form>
+        <div class="social-links">
+          <a href="#">Twitter</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">GitHub</a>
         </div>
+      </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
-        var typed = new Typed('#typed-output', {
-            strings: ["One AI prompt at a time."],
-            typeSpeed: 50,
-            startDelay: 500
-        });
+      var typed = new Typed("#typed-output", {
+        strings: ["One AI prompt at a time."],
+        typeSpeed: 50,
+        startDelay: 500,
+      });
     </script>
-</body>
+  </body>
 </html>
