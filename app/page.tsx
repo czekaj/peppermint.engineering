@@ -7,12 +7,14 @@ import { Input } from "@/components/ui/input";
 const Header = () => (
   <header className="absolute top-0 left-0 w-full z-10 py-6">
     <div className="container mx-auto px-4 flex justify-between items-center">
-      <h1 className="text-2xl font-bold text-emerald-400">
-        Peppermint<span className="font-extralight ml-1">Engineering</span>
-        <Leaf strokeWidth={0.7} className="w-8 h-8 inline ml-0.5" />
-      </h1>
-      <nav>
-        <ul className="flex space-x-6">
+      <a href="/">
+        <h1 className="text-2xl font-bold text-emerald-400">
+          Peppermint<span className="font-extralight ml-1">Engineering</span>
+          <Leaf strokeWidth={0.7} className="w-8 h-8 inline ml-0.5" />
+        </h1>
+      </a>
+      <nav className="hidden md:block">
+        <ul className="flex space-x-6 items-center">
           <li>
             <a
               href="#vision"
@@ -48,6 +50,7 @@ const Header = () => (
           <li>
             <Button
               variant="outline"
+              disabled
               className="bg-transparent text-emerald-400 border-emerald-400 hover:bg-emerald-400 hover:text-black rounded-full"
             >
               Schedule Demo
@@ -75,9 +78,11 @@ const Hero = () => (
         We are transforming personal wellness through innovative AI technology
         and <span className="text-emerald-400">grocery habits analysis</span>.
       </p>
-      <Button className="bg-emerald-500 hover:bg-emerald-600 text-white text-lg py-6 px-10 rounded-full">
-        Discover Our Platform
-      </Button>
+      <a href="#platform">
+        <Button className="bg-emerald-500 hover:bg-emerald-600 text-white text-lg py-6 px-10 rounded-full">
+          Discover Our Platform
+        </Button>
+      </a>
     </div>
   </section>
 );
@@ -244,7 +249,10 @@ const Careers = () => (
         looking for <span className="text-emerald-400">innovative minds</span>{" "}
         to help us revolutionize the world of nutrition technology.
       </p>
-      <Button className="bg-emerald-500 hover:bg-emerald-600 text-white text-lg py-4 px-8 rounded-full">
+      <Button
+        disabled
+        className="bg-emerald-500 hover:bg-emerald-600 text-white py-4 px-8 rounded-full"
+      >
         View Open Positions
       </Button>
     </div>
