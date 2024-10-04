@@ -24,6 +24,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Peppermint Engineering",
   description: "Powering Nutrition Intelligence",
+  themeColor: "#000000", // This sets the browser theme color to black
   openGraph: {
     title: "Peppermint Engineering 🌱",
     description: "Powering Nutrition Intelligence",
