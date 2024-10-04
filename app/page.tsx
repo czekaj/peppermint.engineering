@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Leaf, Brain, Users, Salad } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import dynamic from "next/dynamic";
+import AnimatedSparkle from "@/components/AnimatedSparkle";
 
 const AnimatedRocket = dynamic(() => import("@/components/AnimatedRocket"), {
   ssr: false,
@@ -72,13 +73,13 @@ const Hero = () => (
     <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-emerald-800 via-gray-900 to-black"></div>
     <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center opacity-70"></div>
     <div className="container mx-auto px-4 text-center relative z-10">
-      <p className="md:my-10 mt-0">
+      <p className="md:my-10 mt-20">
         <Salad className="w-40 h-40 inline-block stroke-[0.8] md:stroke-[1.2]" />
       </p>
-      <h2 className="text-5xl md:text-7xl font-bold text-white mb-6">
+      <h2 className="text-5xl md:text-7xl font-bold text-white mb-0">
         <span className="font-normal leading-tight">Powering</span>{" "}
         <span className="text-emerald-400 leading-tight">Nutrition</span>{" "}
-        Intelligence <AnimatedRocket />
+        Intelligence <AnimatedSparkle />
       </h2>
       <p className="text-xl md:text-2xl text-gray-300 mb-10 max-w-2xl mx-auto font-inter">
         We are transforming personal wellness through innovative AI technology
@@ -285,7 +286,8 @@ const LeadCapture = () => (
           className="bg-gray-800 text-white border-gray-700 rounded-full"
         />
         <Button className=" bg-emerald-500 hover:bg-emerald-600 text-white py-4 px-8 rounded-full">
-          Get Peppermint Updates
+          <span>Get Peppermint Updates</span>
+          <span className="ml-2">🚀</span>
         </Button>
       </form>
     </div>
