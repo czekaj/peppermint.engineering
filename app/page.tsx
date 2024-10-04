@@ -228,7 +228,7 @@ const Founder = () => (
           </p>
           <p className="flex md:justify-start justify-center">
             <a href="https://www.linkedin.com/in/lukaszczekaj/" target="_blank">
-              <Button className="bg-emerald-500 hover:bg-emerald-600 text-white rounded-full flex items-center space-x-2">
+              <Button className="bg-emerald-500 hover:bg-emerald-600 text-white rounded-full flex items-center space-x-2 py-4 px-6">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -260,7 +260,7 @@ const Careers = () => (
       </p>
       <Button
         disabled
-        className="bg-emerald-500 hover:bg-emerald-600 text-white py-4 px-8 rounded-full"
+        className="bg-emerald-500 hover:bg-emerald-600 text-white py-4 px-6 rounded-full"
       >
         View Open Positions
       </Button>
@@ -285,7 +285,7 @@ const LeadCapture = () => (
           placeholder="Enter your email"
           className="bg-gray-800 text-white border-gray-700 rounded-full"
         />
-        <Button className=" bg-emerald-500 hover:bg-emerald-600 text-white py-4 px-8 rounded-full">
+        <Button className=" bg-emerald-500 hover:bg-emerald-600 text-white py-4 px-6 rounded-full">
           <span>Get Peppermint Updates</span>
           <span className="ml-2">🚀</span>
         </Button>
