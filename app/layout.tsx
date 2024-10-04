@@ -24,6 +24,19 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Peppermint Engineering",
   description: "Powering Nutrition Intelligence",
+  openGraph: {
+    title: "Peppermint Engineering 🌱",
+    description: "Powering Nutrition Intelligence",
+    images: [
+      {
+        url: "https://www.peppermint.engineering/images/preview.png",
+        width: 1526,
+        height: 948,
+        alt: "Peppermint Engineering",
+      },
+    ],
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -33,6 +46,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <meta
+        name="apple-mobile-web-app-title"
+        content="Peppermint Engineering 🌱"
+      ></meta>
       <body
         className={`${poppins.className} ${inter.variable} ${geistMono.variable} antialiased`}
       >
