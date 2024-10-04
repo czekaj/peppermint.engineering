@@ -51,6 +51,10 @@ export default function RootLayout({
         name="apple-mobile-web-app-title"
         content="Peppermint Engineering 🌱"
       ></meta>
+      <meta
+        name="apple-mobile-web-app-status-bar-style"
+        content="black-translucent"
+      ></meta>
       <body
         className={`${poppins.className} ${inter.variable} ${geistMono.variable} antialiased`}
       >
