@@ -5,6 +5,7 @@ import { Leaf, Brain, Users, Salad } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import dynamic from "next/dynamic";
 import AnimatedSparkle from "@/components/AnimatedSparkle";
+import Image from "next/image";
 
 const AnimatedRocket = dynamic(() => import("@/components/AnimatedRocket"), {
   ssr: false,
@@ -161,8 +162,16 @@ const Platform = () => (
   <section id="platform" className="py-20 bg-gray-900">
     <div className="container mx-auto px-4">
       <h2 className="text-4xl font-bold text-emerald-400 text-center mb-12">
-        Our Platform
+        The Peppermint Platform 🌱
       </h2>
+      <div className="flex justify-center items-center">
+        <img
+          src="/images/iphone_ipad_peppermint_demo.png"
+          alt="Platform"
+          width={1000}
+          className="m-10"
+        />
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <PlatformFeature
           icon={<Leaf className="w-6 h-6 text-white" />}
