@@ -106,12 +106,12 @@ const VisionMission = () => (
           <CardContent className="p-6">
             <h3 className="text-2xl font-semibold text-white mb-4">Vision</h3>
             <p className="text-gray-300">
-              We envision a world where everyone has the power to make{" "}
+              We envision a world where everyone has the power to make informed,{" "}
               <span className="text-emerald-400">
-                informed, healthier food choices
-              </span>{" "}
-              effortlessly. By harnessing the potential of AI and real-world
-              data, we're creating a future where optimal nutrition is{" "}
+                healthier food choices effortlessly
+              </span>
+              . By harnessing the potential of AI and real-world data, we're
+              creating a future where optimal nutrition is{" "}
               <span className="text-emerald-400">
                 accessible and personalized
               </span>{" "}
@@ -123,13 +123,13 @@ const VisionMission = () => (
           <CardContent className="p-6">
             <h3 className="text-2xl font-semibold text-white mb-4">Mission</h3>
             <p className="text-gray-300">
-              Our mission is to revolutionize how people{" "}
+              Our mission is to revolutionize how people understand and{" "}
+              <span className="text-emerald-400">improve their nutrition</span>.
+              By analyzing grocery purchase data with advanced AI, we're{" "}
               <span className="text-emerald-400">
-                understand and improve their nutrition
-              </span>
-              . By analyzing grocery purchase data with advanced AI, we're{" "}
-              <span className="text-emerald-400">empowering individuals</span>{" "}
-              to take control of their health, one meal at a time.
+                empowering individuals to take control
+              </span>{" "}
+              of their health, one meal at a time.
             </p>
           </CardContent>
         </Card>
@@ -263,16 +263,16 @@ const Careers = () => (
         Join Our Team
       </h2>
       <p className=" text-gray-300 mb-10 max-w-2xl mx-auto">
-        Are you passionate about using technology to improve lives? We're
+        Are you passionate about using technology to improve lives? We're always
         looking for <span className="text-emerald-400">innovative minds</span>{" "}
         to help us revolutionize the world of nutrition technology.
       </p>
-      <Button
+      {/* <Button
         disabled
         className="bg-emerald-500 hover:bg-emerald-600 text-white py-4 px-6 rounded-full"
       >
         View Open Positions
-      </Button>
+      </Button> */}
     </div>
   </section>
 );
