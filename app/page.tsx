@@ -5,7 +5,6 @@ import { Leaf, Brain, Users, Salad } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import dynamic from "next/dynamic";
 import AnimatedSparkle from "@/components/AnimatedSparkle";
-import Image from "next/image";
 
 const AnimatedRocket = dynamic(() => import("@/components/AnimatedRocket"), {
   ssr: false,
@@ -332,6 +331,102 @@ const SocialLinks = () => (
   </section>
 );
 
+const Footer = () => (
+  <footer className="bg-gray-800 text-gray-300 py-12">
+    <div className="container mx-auto px-4">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <h3 className="text-xl font-bold text-emerald-400 mb-4">
+            Peppermint Engineering, Inc.
+          </h3>
+          <p className="text-sm">
+            A Delaware-based company, rewriting the rules of nutrition
+            technology through AI and grocery habits analysis.
+          </p>
+          <p className="mt-4 text-sm">
+            Coming to you from the fabulous{" "}
+            <span className="text-emerald-400">Las Vegas</span>, NV 🎰
+          </p>
+        </div>
+        <div className="lg:ml-10">
+          <h4 className="text-lg font-semibold text-white mb-4">Quick Links</h4>
+          <ul className="space-y-2">
+            <li>
+              <a
+                href="#vision"
+                className="hover:text-emerald-400 transition-colors"
+              >
+                Vision
+              </a>
+            </li>
+            <li>
+              <a
+                href="#platform"
+                className="hover:text-emerald-400 transition-colors"
+              >
+                Platform
+              </a>
+            </li>
+            <li>
+              <a
+                href="#team"
+                className="hover:text-emerald-400 transition-colors"
+              >
+                Team
+              </a>
+            </li>
+            <li>
+              <a
+                href="#careers"
+                className="hover:text-emerald-400 transition-colors"
+              >
+                Careers
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 className="text-lg font-semibold text-white mb-4">Contact Us</h4>
+          <p className="text-sm">
+            <a href="mailto:%68%65%6c%6c%6f%40%70%65%70%70%65%72%6d%69%6e%74%2e%65%6e%67%69%6e%65%65%72%69%6e%67">
+              <span className="email">
+                hello@peppermint<b>.example</b>.engineering
+              </span>
+            </a>
+          </p>
+        </div>
+        <div>
+          <h4 className="text-lg font-semibold text-white mb-4">Follow Us</h4>
+          <div className="flex space-x-4">
+            <a
+              href="https://linkedin.com/company/peppermint-engineering"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-300 hover:text-emerald-400 transition-colors"
+            >
+              <svg
+                className="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+            </a>
+            {/* Add more social media icons as needed */}
+          </div>
+        </div>
+      </div>
+      <div className="border-t border-gray-700 mt-8 pt-8 text-center">
+        <p className="text-sm">
+          &copy; {new Date().getFullYear()} Peppermint Engineering, Inc. All
+          rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+);
+
 const PeppermintWebsite = () => {
   return (
     <div className="min-h-screen bg-gray-900 text-white">
@@ -342,12 +437,7 @@ const PeppermintWebsite = () => {
       <Founder />
       <Careers />
       <LeadCapture />
-      <SocialLinks />
-      <footer className="bg-gray-900 text-gray-400 py-8">
-        <div className="container mx-auto px-4 text-center">
-          <p>&copy; 2024 Peppermint Engineering. All rights reserved.</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };

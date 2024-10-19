@@ -84,4 +84,7 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+  span.email b {
+    display: none;
+  }
 }
