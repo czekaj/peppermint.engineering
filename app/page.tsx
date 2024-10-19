@@ -1,75 +1,79 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Leaf, Brain, Users, Salad } from "lucide-react";
+import { Brain, Users, Salad, Leaf } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import dynamic from "next/dynamic";
 import AnimatedSparkle from "@/components/AnimatedSparkle";
+import DemoRequestPopup from "@/components/DemoRequestPopup";
+import { Card, CardContent } from "@/components/ui/card";
 
 const AnimatedRocket = dynamic(() => import("@/components/AnimatedRocket"), {
   ssr: false,
 });
 
-const Header = () => (
-  <header className="absolute top-0 left-0 w-full z-10 py-6">
-    <div className="container mx-auto px-4 flex md:justify-between items-center justify-center">
-      <a href="/">
-        <h1 className="text-2xl font-bold text-emerald-400">
-          Peppermint<span className="font-extralight ml-1">Engineering</span>
-          <Leaf strokeWidth={0.7} className="w-8 h-8 inline ml-0.5" />
-        </h1>
-      </a>
-      <nav className="hidden md:block">
-        <ul className="flex space-x-6 items-center">
-          <li>
-            <a
-              href="#vision"
-              className="text-gray-300 hover:text-emerald-400 transition-colors"
-            >
-              Vision
-            </a>
-          </li>
-          <li>
-            <a
-              href="#platform"
-              className="text-gray-300 hover:text-emerald-400 transition-colors"
-            >
-              Platform
-            </a>
-          </li>
-          <li>
-            <a
-              href="#team"
-              className="text-gray-300 hover:text-emerald-400 transition-colors"
-            >
-              Team
-            </a>
-          </li>
-          <li>
-            <a
-              href="#careers"
-              className="text-gray-300 hover:text-emerald-400 transition-colors"
-            >
-              Careers
-            </a>
-          </li>
-          <li>
-            <Button
-              variant="outline"
-              disabled
-              className="bg-transparent text-emerald-400 border-emerald-400 hover:bg-emerald-400 hover:text-black rounded-full"
-            >
-              Schedule Demo
-            </Button>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-);
+const Header = () => {
+  return (
+    <header className="absolute top-0 left-0 w-full z-10 py-6">
+      <div className="container mx-auto px-4 flex md:justify-between items-center justify-center">
+        <a href="/">
+          <h1 className="text-2xl font-bold text-emerald-400">
+            Peppermint<span className="font-extralight ml-1">Engineering</span>
+            <Leaf strokeWidth={0.7} className="w-8 h-8 inline ml-0.5" />
+          </h1>
+        </a>
+        <nav className="hidden md:block">
+          <ul className="flex space-x-6 items-center">
+            <li>
+              <a
+                href="#vision"
+                className="text-gray-300 hover:text-emerald-400 transition-colors"
+              >
+                Vision
+              </a>
+            </li>
+            <li>
+              <a
+                href="#platform"
+                className="text-gray-300 hover:text-emerald-400 transition-colors"
+              >
+                Platform
+              </a>
+            </li>
+            <li>
+              <a
+                href="#team"
+                className="text-gray-300 hover:text-emerald-400 transition-colors"
+              >
+                Team
+              </a>
+            </li>
+            <li>
+              <a
+                href="#careers"
+                className="text-gray-300 hover:text-emerald-400 transition-colors"
+              >
+                Careers
+              </a>
+            </li>
+            <li>
+              <Button
+                variant="outline"
+                id="open-popup"
+                className="bg-transparent text-emerald-400 border-emerald-400 hover:bg-emerald-400 hover:text-black rounded-full"
+              >
+                Schedule Demo
+              </Button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <DemoRequestPopup />
+    </header>
+  );
+};
 
 const Hero = () => (
-  <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  <section className="relative z-0 min-h-screen flex items-center justify-center overflow-hidden">
     <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-emerald-800 via-gray-900 to-black"></div>
     <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center opacity-70"></div>
     <div className="container mx-auto px-4 text-center relative z-10">

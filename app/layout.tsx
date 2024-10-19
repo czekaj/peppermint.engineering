@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import { Inter, Poppins } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
+import Script from "next/script";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -84,6 +85,7 @@ export default function RootLayout({
             </a>
           </div>
         </noscript>
+        <Script src="/popup.js" strategy="afterInteractive" />
       </body>
       <GoogleAnalytics gaId="G-3N0JHRC8ZP" />
     </html>
