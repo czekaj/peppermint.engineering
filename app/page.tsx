@@ -180,7 +180,7 @@ const Platform = () => (
           id="open-popup-2"
           className="bg-emerald-500 hover:bg-emerald-600 text-white text-lg py-6 px-10 rounded-full"
         >
-          Schedule a Consultation
+          Schedule a Demo
         </Button>
       </div>
 
