@@ -193,6 +193,14 @@ const Platform = () => (
         />
       </div>
     </div>
+    <div className="flex justify-center items-center mt-10">
+      <Button
+        id="open-popup"
+        className="bg-emerald-500 hover:bg-emerald-600 text-white text-lg py-6 px-10 rounded-full"
+      >
+        Schedule Demo
+      </Button>
+    </div>
   </section>
 );
 
@@ -263,19 +271,37 @@ const Careers = () => (
   <section id="careers" className="py-20 bg-gray-900">
     <div className="container mx-auto px-4 text-center">
       <h2 className="text-4xl font-bold text-emerald-400 mb-6">
-        Join Our Team
+        Join Our Mission
       </h2>
-      <p className=" text-gray-300 mb-10 max-w-2xl mx-auto">
-        Are you passionate about using technology to improve lives? We're always
-        looking for <span className="text-emerald-400">innovative minds</span>{" "}
-        to help us revolutionize the world of nutrition technology.
+      <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
+        Are you excited about the intersection of nutrition, AI, and personal
+        health? We'd love to hear from you. We're open to various forms of
+        collaboration, including:
       </p>
-      {/* <Button
-        disabled
-        className="bg-emerald-500 hover:bg-emerald-600 text-white py-4 px-6 rounded-full"
-      >
-        View Open Positions
-      </Button> */}
+      <ul className="text-gray-300 mb-6 max-w-md mx-auto text-left list-none">
+        <li className="flex items-center mb-2">
+          <span className="text-emerald-400 mr-2">•</span>
+          Advisory roles
+        </li>
+        <li className="flex items-center mb-2">
+          <span className="text-emerald-400 mr-2">•</span>
+          Consulting opportunities
+        </li>
+        <li className="flex items-center mb-2">
+          <span className="text-emerald-400 mr-2">•</span>
+          Knowledge sharing
+        </li>
+        <li className="flex items-center mb-2">
+          <span className="text-emerald-400 mr-2">•</span>
+          Potential future partnerships
+        </li>
+      </ul>
+      <p className="text-gray-300 mb-10 max-w-2xl mx-auto">
+        While we're not currently hiring for full-time positions, we believe in
+        the power of collaboration to drive innovation. If you have insights,
+        expertise, or ideas that could contribute to our mission, we'd be
+        thrilled to start a conversation.
+      </p>
     </div>
   </section>
 );
