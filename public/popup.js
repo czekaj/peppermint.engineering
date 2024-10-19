@@ -1,12 +1,14 @@
 function initializePopup() {
   const popup = document.getElementById('demo-popup');
-  const openButton = document.getElementById('open-popup');
+  const openButtons = document.querySelectorAll('[id^="open-popup"]');
   const closeButton = document.getElementById('close-popup');
 
-  if (popup && openButton && closeButton) {
-    openButton.addEventListener('click', () => {
-      popup.classList.remove('hidden');
-      popup.classList.add('flex');
+  if (popup && openButtons.length > 0 && closeButton) {
+    openButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        popup.classList.remove('hidden');
+        popup.classList.add('flex');
+      });
     });
 
     closeButton.addEventListener('click', () => {

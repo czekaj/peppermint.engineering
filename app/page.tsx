@@ -58,7 +58,7 @@ const Header = () => {
             <li>
               <Button
                 variant="outline"
-                id="open-popup"
+                id="open-popup-1"
                 className="bg-transparent text-emerald-400 border-emerald-400 hover:bg-emerald-400 hover:text-black rounded-full"
               >
                 Schedule Demo
@@ -175,6 +175,15 @@ const Platform = () => (
           className="m-10"
         />
       </div>
+      <div className="flex justify-center items-center mt-6 mb-16">
+        <Button
+          id="open-popup-2"
+          className="bg-emerald-500 hover:bg-emerald-600 text-white text-lg py-6 px-10 rounded-full"
+        >
+          Schedule a Consultation
+        </Button>
+      </div>
+
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <PlatformFeature
           icon={<Leaf className="w-6 h-6 text-white" />}
@@ -192,14 +201,6 @@ const Platform = () => (
           description="Empowering nutritionists and healthcare providers with robust tools to monitor and guide their clients effectively, enhancing the quality of care."
         />
       </div>
-    </div>
-    <div className="flex justify-center items-center mt-10">
-      <Button
-        id="open-popup"
-        className="bg-emerald-500 hover:bg-emerald-600 text-white text-lg py-6 px-10 rounded-full"
-      >
-        Schedule Demo
-      </Button>
     </div>
   </section>
 );
@@ -424,6 +425,13 @@ const Footer = () => (
               </span>
             </a>
           </p>
+          <Button
+            variant="outline"
+            id="open-popup-3"
+            className="mt-6 bg-transparent text-emerald-400 border-emerald-400 hover:bg-emerald-400 hover:text-black rounded-full"
+          >
+            Request a Consultation
+          </Button>
         </div>
         <div>
           <h4 className="text-lg font-semibold text-white mb-4">Follow Us</h4>
