@@ -1,6 +1,18 @@
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Brain, Users, Salad, Leaf } from "lucide-react";
+import {
+  Brain,
+  Users,
+  Salad,
+  Leaf,
+  BarChart2,
+  Link,
+  TrendingUp,
+  Briefcase,
+  Stethoscope,
+  Code,
+  Smartphone,
+} from "lucide-react";
 import { Input } from "@/components/ui/input";
 import dynamic from "next/dynamic";
 import AnimatedSparkle from "@/components/AnimatedSparkle";
@@ -183,23 +195,54 @@ const Platform = () => (
           Schedule a Demo
         </Button>
       </div>
-
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <PlatformFeature
-          icon={<Leaf className="w-6 h-6 text-white" />}
-          title="AI-Powered Insights"
-          description="Our advanced algorithms transform your grocery purchases into personalized nutritional recommendations, making healthy choices effortless."
+          icon={<Stethoscope className="w-6 h-6 text-white" />}
+          title="For Healthcare Providers"
+          description="Empower nutritionists and hospital nutrition departments with AI-driven insights from patients' real grocery purchases, enhancing personalized care and improving outcomes."
         />
         <PlatformFeature
-          icon={<Brain className="w-6 h-6 text-white" />}
-          title="Comprehensive Analysis"
-          description="We look beyond calorie counting, offering a holistic view of your nutritional habits based on your real-world buying patterns."
+          icon={<Briefcase className="w-6 h-6 text-white" />}
+          title="For Payers"
+          description="Offer innovative wellness benefits to members, reduce healthcare costs through data-driven nutrition interventions, and gain population-level health insights."
         />
         <PlatformFeature
-          icon={<Users className="w-6 h-6 text-white" />}
-          title="Professional Dashboard"
-          description="Empowering nutritionists and healthcare providers with robust tools to monitor and guide their clients effectively, enhancing the quality of care."
+          icon={<Code className="w-6 h-6 text-white" />}
+          title="For Digital Health Platforms"
+          description="Seamlessly integrate comprehensive nutrition intelligence into your existing solutions with our robust API and white-label options."
         />
+      </div>
+
+      <div className="mt-16">
+        <h3 className="text-2xl font-semibold text-emerald-400 text-center mb-8">
+          Why Peppermint's B2B Platform Stands Out
+        </h3>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <PlatformFeature
+            icon={<BarChart2 className="w-6 h-6 text-white" />}
+            title="Data-Driven Insights"
+            description="Leverage AI-powered analysis of real grocery purchases to inform treatment plans, wellness programs, and health interventions at both individual and population levels."
+          />
+          <PlatformFeature
+            icon={<Smartphone className="w-6 h-6 text-white" />}
+            title="Consumer-B2B Synergy"
+            description="Our sleek consumer app drives engagement and data collection, while the B2B platform turns this rich data into actionable insights for healthcare professionals."
+          />
+          <PlatformFeature
+            icon={<Link className="w-6 h-6 text-white" />}
+            title="Seamless Integration"
+            description="With our robust API and potential future EMR integration, Peppermint fits smoothly into your existing digital health ecosystem, scaling from private practices to large health systems."
+          />
+        </div>
+        <div className="flex justify-center items-center mt-6 mb-16">
+          <Button
+            variant="outline"
+            id="open-popup-3"
+            className="mt-6 bg-transparent text-emerald-400 border-emerald-400 hover:bg-emerald-400 text-lg py-6 px-10 hover:text-black rounded-full"
+          >
+            Book an Intro Call
+          </Button>
+        </div>
       </div>
     </div>
   </section>
@@ -431,7 +474,7 @@ const Footer = () => (
           </p>
           <Button
             variant="outline"
-            id="open-popup-3"
+            id="open-popup-4"
             className="mt-6 bg-transparent text-emerald-400 border-emerald-400 hover:bg-emerald-400 hover:text-black rounded-full"
           >
             Request a Consultation

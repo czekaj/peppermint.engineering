@@ -80,7 +80,7 @@ const DemoRequestPopup: React.FC = () => {
           </select>
           <textarea
             name="message"
-            placeholder="Tell us about your organization's nutrition management needs or challenges"
+            placeholder="Tell us about your organization's nutrition management goals or challenges"
             className="w-full bg-gray-800 text-white border-gray-700 rounded-md py-2 px-3 h-24"
             required
           ></textarea>
