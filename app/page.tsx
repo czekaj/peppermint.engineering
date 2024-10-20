@@ -214,7 +214,7 @@ const Founder = () => (
       <div className="flex flex-col md:flex-row items-center justify-center">
         <div className="md:w-1/3 mb-8 md:mb-0">
           <img
-            src="images/lucas_czekaj.png"
+            src="images/lucas_czekaj.jpg"
             alt="Lucas Czekaj"
             className="rounded-full md:w-96 md:h-96 object-cover mx-auto border-0 border-emerald-400/20"
           />
@@ -241,11 +241,15 @@ const Founder = () => (
           <p className="text-gray-300 mb-6">
             With over 15 years of experience in software engineering at industry
             leaders like Instacart and Guidewire, Lucas combines unparalleled
-            expertise in{" "}
+            expertise in trailblazing{" "}
             <span className="text-emerald-400">
-              trailblazing food and nutrition solutions
+              food and nutrition solutions
             </span>{" "}
-            with a deep understanding of consumer apps and enterprise software.
+            with a deep understanding of consumer{" "}
+            <span className="text-emerald-400">
+              apps and enterprise software
+            </span>
+            .
           </p>
           <p className="flex md:justify-start justify-center">
             <a href="https://www.linkedin.com/in/lukaszczekaj/" target="_blank">
