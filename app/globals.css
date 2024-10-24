@@ -6,6 +6,16 @@
   font-family: var(--font-inter);
 }
 
+.font-ivyora {
+  font-family: var(--font-ivyora-display-regular);
+  letter-spacing: 0.1em;
+}
+
+.font-ivyora-bold {
+  font-family: var(--font-ivyora-display-bold);
+  letter-spacing: 0.1em;
+}
+
 html {
   scroll-behavior: smooth;
 }

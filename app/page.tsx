@@ -94,12 +94,12 @@ const Hero = () => (
       <p className="md:my-10 mt-20">
         <Salad className="w-40 h-40 inline-block stroke-[0.8] md:stroke-[1.2]" />
       </p>
-      <h2 className="text-5xl md:text-7xl font-bold text-white mb-0">
+      <h2 className="text-5xl md:text-7xl text-white mb-0 font-bold">
         <span className="font-normal leading-tight">Powering</span>{" "}
         <span className="text-emerald-400 leading-tight">Nutrition</span>{" "}
         Intelligence <AnimatedSparkle />
       </h2>
-      <p className="text-xl md:text-2xl text-gray-300 mb-10 max-w-2xl mx-auto font-inter">
+      <p className="text-xl md:text-2xl text-gray-300 mb-10 max-w-2xl mx-auto">
         We are transforming personal wellness through innovative AI technology
         and <span className="text-emerald-400">grocery habits analysis</span>.
       </p>
@@ -268,7 +268,7 @@ const Founder = () => (
           <h3 className="text-2xl font-semibold text-white mb-4">
             Lucas Czekaj
           </h3>
-          <p className="text-gray-300 mb-6">
+          <p className="text-gray-300 mb-6 text-lg">
             Lucas brings a unique blend of{" "}
             <span className="text-emerald-400">
               technical expertise and passion
@@ -298,7 +298,7 @@ const Founder = () => (
           </p>
           <p className="flex md:justify-start justify-center">
             <a href="https://www.linkedin.com/in/lukaszczekaj/" target="_blank">
-              <Button className="bg-emerald-500 hover:bg-emerald-600 text-white rounded-full flex items-center space-x-2 py-4 px-6">
+              <Button className="bg-emerald-500 hover:bg-emerald-600 text-white rounded-full flex items-center space-x-2 py-6 px-6 text-lg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"

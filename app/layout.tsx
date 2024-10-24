@@ -16,6 +16,16 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
+const ivyoraDisplayRegular = localFont({
+  src: "./fonts/ivyora-display-regular.woff2",
+  variable: "--font-ivyora-display-regular",
+});
+
+const ivyoraDisplayBold = localFont({
+  src: "./fonts/ivyora-display-bold.woff2",
+  variable: "--font-ivyora-display-bold",
+});
+
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const poppins = Poppins({
   subsets: ["latin"],
@@ -57,7 +67,7 @@ export default function RootLayout({
         content="black-translucent"
       ></meta>
       <body
-        className={`${poppins.className} ${inter.variable} ${geistMono.variable} antialiased`}
+        className={`${poppins.className} ${inter.variable} ${geistMono.variable} ${ivyoraDisplayRegular.variable} ${ivyoraDisplayBold.variable} antialiased`}
       >
         {children}
         <script type="text/javascript">
