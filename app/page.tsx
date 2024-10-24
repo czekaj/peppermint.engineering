@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
 import {
   Brain,
   Users,
@@ -16,9 +15,9 @@ import {
 } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import dynamic from "next/dynamic";
-import AnimatedSparkle from "@/components/AnimatedSparkle";
 import DemoRequestPopup from "@/components/DemoRequestPopup";
 import { Card, CardContent } from "@/components/ui/card";
+import AnimatedSpark from "@/components/AnimatedSpark";
 
 const AnimatedRocket = dynamic(() => import("@/components/AnimatedRocket"), {
   ssr: false,
@@ -97,7 +96,8 @@ const Hero = () => (
       <h2 className="text-5xl md:text-7xl text-white mb-0 font-bold">
         <span className="font-normal leading-tight">Powering</span>{" "}
         <span className="text-emerald-400 leading-tight">Nutrition</span>{" "}
-        Intelligence <AnimatedSparkle />
+        Intelligence
+        <AnimatedSpark />
       </h2>
       <p className="text-xl md:text-2xl text-gray-300 mb-10 max-w-2xl mx-auto">
         We are transforming personal wellness through innovative AI technology
@@ -179,7 +179,7 @@ const Platform = () => (
   <section id="platform" className="py-20 bg-gray-900">
     <div className="container mx-auto px-4">
       <h2 className="text-4xl font-bold text-emerald-400 text-center mb-12">
-        The Peppermint Platform 🌱
+        The Peppermint Platform
       </h2>
       <div className="flex justify-center items-center">
         <img
