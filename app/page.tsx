@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 import {
   Brain,
   Users,
@@ -28,10 +29,11 @@ const Header = () => {
     <header className="absolute top-0 left-0 w-full z-10 py-6">
       <div className="container mx-auto px-4 flex md:justify-between items-center justify-center">
         <a href="/">
-          <h1 className="text-2xl font-bold text-emerald-400">
-            Peppermint<span className="font-extralight ml-1">Engineering</span>
-            <Leaf strokeWidth={0.7} className="w-8 h-8 inline ml-0.5" />
-          </h1>
+          <img
+            src="/images/peppermint_engineering_logo.png"
+            alt="Peppermint Engineering Logo"
+            width={280}
+          />
         </a>
         <nav className="hidden md:block">
           <ul className="flex space-x-6 items-center">
