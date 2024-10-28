@@ -12,6 +12,10 @@ import {
   Stethoscope,
   Code,
   Smartphone,
+  Grape,
+  Scale,
+  Workflow,
+  Fingerprint,
 } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import dynamic from "next/dynamic";
@@ -74,7 +78,7 @@ const Header = () => {
                 id="open-popup-1"
                 className="bg-transparent text-emerald-400 border-emerald-400 hover:bg-emerald-400 hover:text-black rounded-full"
               >
-                Schedule Demo
+                Request Early Access
               </Button>
             </li>
           </ul>
@@ -93,15 +97,17 @@ const Hero = () => (
       <p className="md:my-10 mt-20">
         <Salad className="w-40 h-40 inline-block stroke-[0.8] md:stroke-[1.2]" />
       </p>
-      <h2 className="text-5xl md:text-7xl text-white mb-0 font-bold">
+      <h2 className="text-3xl md:text-5xl text-white mb-0 font-bold">
+        Building the{" "}
+        <span className="text-emerald-400 leading-tight">
+          Intelligence Layer
+        </span>{" "}
+        for Personalized Nutrition
+      </h2>
+      <p className="text-xl md:text-2xl text-gray-300 mt-6 mb-10 max-w-2xl mx-auto">
         <span className="font-normal leading-tight">Powering</span>{" "}
         <span className="text-emerald-400 leading-tight">Nutrition</span>{" "}
-        Intelligence
-        <AnimatedSpark />
-      </h2>
-      <p className="text-xl md:text-2xl text-gray-300 mb-10 max-w-2xl mx-auto">
-        We are transforming personal wellness through innovative AI technology
-        and <span className="text-emerald-400">grocery habits analysis</span>.
+        Intelligence <AnimatedSpark />
       </p>
       <a href="#platform">
         <Button className="bg-emerald-500 hover:bg-emerald-600 text-white text-lg py-6 px-10 rounded-full">
@@ -122,31 +128,32 @@ const VisionMission = () => (
         <Card className="bg-gray-900 border border-emerald-400/20 rounded-lg overflow-hidden">
           <CardContent className="p-6">
             <h3 className="text-2xl font-semibold text-white mb-4">Vision</h3>
+            <p className="text-gray-300 font-bold mb-4">
+              We're building infrastructure for the future of personalized
+              wellness.
+            </p>
+            <p className="text-gray-300 mb-4">
+              Modern wellness platforms need sophisticated nutrition
+              intelligence. Yet analyzing purchase data and delivering
+              personalized insights remains incredibly complex.
+            </p>
             <p className="text-gray-300">
-              We envision a world where everyone has the power to make informed,{" "}
-              <span className="text-emerald-400">
-                healthier food choices effortlessly
-              </span>
-              . By harnessing the potential of AI and real-world data, we're
-              creating a future where optimal nutrition is{" "}
-              <span className="text-emerald-400">
-                accessible and personalized
-              </span>{" "}
-              for all.
+              We're solving this by creating the AI-powered layer that will
+              drive the next generation of wellness innovations.
             </p>
           </CardContent>
         </Card>
         <Card className="bg-gray-900 border border-emerald-400/20 rounded-lg overflow-hidden">
           <CardContent className="p-6">
             <h3 className="text-2xl font-semibold text-white mb-4">Mission</h3>
+            <p className="text-gray-300 mb-4">
+              Our mission is to power the future of personalized nutrition by
+              providing the intelligence infrastructure that wellness platforms
+              need.
+            </p>
             <p className="text-gray-300">
-              Our mission is to revolutionize how people understand and{" "}
-              <span className="text-emerald-400">improve their nutrition</span>.
-              By analyzing grocery purchase data with advanced AI, we're{" "}
-              <span className="text-emerald-400">
-                empowering individuals to take control
-              </span>{" "}
-              of their health, one meal at a time.
+              Through sophisticated AI and real purchase data analysis, we're
+              enabling the next generation of nutrition-driven innovations.
             </p>
           </CardContent>
         </Card>
@@ -179,7 +186,7 @@ const Platform = () => (
   <section id="platform" className="py-20 bg-gray-900">
     <div className="container mx-auto px-4">
       <h2 className="text-4xl font-bold text-emerald-400 text-center mb-12">
-        The Peppermint Platform
+        Nutrition Intelligence as a Service
       </h2>
       <div className="flex justify-center items-center">
         <img
@@ -194,46 +201,65 @@ const Platform = () => (
           id="open-popup-2"
           className="bg-emerald-500 hover:bg-emerald-600 text-white text-lg py-6 px-10 rounded-full"
         >
-          Schedule a Demo
+          Request Early Access
         </Button>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <PlatformFeature
-          icon={<Stethoscope className="w-6 h-6 text-white" />}
-          title="For Healthcare Providers"
-          description="Empower nutritionists and hospital nutrition departments with AI-driven insights from patients' real grocery purchases, enhancing personalized care and improving outcomes."
+          icon={<Grape className="w-6 h-6 text-white" />}
+          title="For Wellness Platforms"
+          description="Integrate comprehensive nutrition insights into your product through our API. Transform grocery purchase data into personalized recommendations that drive engagement and outcomes."
         />
         <PlatformFeature
-          icon={<Briefcase className="w-6 h-6 text-white" />}
-          title="For Payers"
-          description="Offer innovative wellness benefits to members, reduce healthcare costs through data-driven nutrition interventions, and gain population-level health insights."
+          icon={<Scale className="w-6 h-6 text-white" />}
+          title="For Weight Management Solutions"
+          description="Give your platform an edge with AI-powered nutrition guidance based on actual purchasing behavior, not manual logging."
         />
         <PlatformFeature
-          icon={<Code className="w-6 h-6 text-white" />}
-          title="For Digital Health Platforms"
-          description="Seamlessly integrate comprehensive nutrition intelligence into your existing solutions with our robust API and white-label options."
+          icon={<Smartphone className="w-6 h-6 text-white" />}
+          title="For Lifestyle Apps"
+          description="Build sticky experiences with a nutrition intelligence platform that helps your users make better choices effortlessly."
         />
+      </div>
+      <h3 className="text-3xl font-bold text-emerald-400 text-center mt-24 mb-12">
+        Our Platform Features
+      </h3>
+      <div className="text-gray-300 mb-16">
+        <ul className="list-disc list-inside space-y-2">
+          <li>
+            Purchase Data Intelligence - Transform grocery data into actionable
+            insights
+          </li>
+          <li>
+            AI-Powered Guidance - Consistent, high-quality nutrition
+            recommendations
+          </li>
+          <li>Developer-First API - Built by engineers, for engineers</li>
+          <li>
+            White-Label Components - Beautiful, ready-to-use UI components
+          </li>
+        </ul>
       </div>
 
       <div className="mt-16">
-        <h3 className="text-2xl font-semibold text-emerald-400 text-center mb-8">
-          Why Peppermint's B2B Platform Stands Out
+        <h3 className="text-3xl font-bold text-emerald-400 text-center mb-8">
+          Why Peppermint
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <PlatformFeature
-            icon={<BarChart2 className="w-6 h-6 text-white" />}
-            title="Data-Driven Insights"
-            description="Leverage AI-powered analysis of real grocery purchases to inform treatment plans, wellness programs, and health interventions at both individual and population levels."
+            icon={<Brain className="w-6 h-6 text-white" />}
+            title="Sophisticated AI Engine"
+            description="While others offer basic scoring, our advanced AI analyzes purchase patterns, nutritional data, and user goals to deliver truly personalized insights at scale."
           />
           <PlatformFeature
-            icon={<Smartphone className="w-6 h-6 text-white" />}
-            title="Consumer-B2B Synergy"
-            description="Our sleek consumer app drives engagement and data collection, while the B2B platform turns this rich data into actionable insights for healthcare professionals."
+            icon={<Workflow className="w-6 h-6 text-white" />}
+            title="Platform Infrastructure"
+            description="Built as a complete intelligence layer, not just a scoring system. Power your platform with comprehensive nutrition intelligence through our flexible API."
           />
           <PlatformFeature
-            icon={<Link className="w-6 h-6 text-white" />}
-            title="Seamless Integration"
-            description="With our robust API and potential future EMR integration, Peppermint fits smoothly into your existing digital health ecosystem, scaling from private practices to large health systems."
+            icon={<Fingerprint className="w-6 h-6 text-white" />}
+            title="Deep Personalization"
+            description="Transform real purchase data into tailored recommendations that help your users achieve better outcomes without manual tracking or data entry."
           />
         </div>
         <div className="flex justify-center items-center mt-6 mb-16">
@@ -242,7 +268,7 @@ const Platform = () => (
             id="open-popup-3"
             className="mt-6 bg-transparent text-emerald-400 border-emerald-400 hover:bg-emerald-400 text-lg py-6 px-10 hover:text-black rounded-full"
           >
-            Book an Intro Call
+            Request Early Access
           </Button>
         </div>
       </div>
@@ -269,32 +295,17 @@ const Founder = () => (
             Lucas Czekaj
           </h3>
           <p className="text-gray-300 mb-6 text-lg">
-            Lucas brings a unique blend of{" "}
-            <span className="text-emerald-400">
-              technical expertise and passion
-            </span>{" "}
-            for improving health and wellness through technology. As a key
-            player in launching the{" "}
-            <span className="text-emerald-400">Instacart Health</span>{" "}
-            initiative, Lucas led the development of Instacart's Fresh Funds
-            platform, addressing food insecurity and promoting access to healthy
-            nutrition. His innovations were instrumental in securing
-            high-profile partnerships with{" "}
-            <span className="text-emerald-400">Kaiser Permanente</span> and
-            Michelle Obama's Partnership for Healthier America.
-          </p>
-          <p className="text-gray-300 mb-6">
-            With over 15 years of experience in software engineering at industry
-            leaders like Instacart and Guidewire, Lucas combines unparalleled
-            expertise in trailblazing{" "}
-            <span className="text-emerald-400">
-              food and nutrition solutions
-            </span>{" "}
-            with a deep understanding of consumer{" "}
-            <span className="text-emerald-400">
-              apps and enterprise software
-            </span>
-            .
+            Previously led development of Instacart's Fresh Funds platform,
+            architecting the foundation of the Instacart Health initiative that
+            secured partnerships with Kaiser Permanente and Michelle Obama's
+            Partnership for Healthier America. <br />
+            <br />
+            Bringing deep expertise in building consumer-grade platforms at
+            enterprise scale from Instacart, and experience developing
+            sophisticated B2B solutions at Guidewire. <br />
+            <br />
+            Seasoned tech leader with a track record of shipping 0-to-1 products
+            that scale.
           </p>
           <p className="flex md:justify-start justify-center">
             <a href="https://www.linkedin.com/in/lukaszczekaj/" target="_blank">
@@ -420,12 +431,11 @@ const Footer = () => (
             Peppermint Engineering, Inc.
           </h3>
           <p className="text-sm">
-            A Delaware-based company, rewriting the rules of nutrition
-            technology through AI and grocery habits analysis.
+            A Delaware C-Corp building the intelligence layer for personalized
+            nutrition.
           </p>
           <p className="mt-4 text-sm">
-            Coming to you from the fabulous{" "}
-            <span className="text-emerald-400">Las Vegas</span>, NV 🎰
+            Based in Las Vegas, built with Silicon Valley DNA 🌉
           </p>
         </div>
         <div className="lg:ml-10">

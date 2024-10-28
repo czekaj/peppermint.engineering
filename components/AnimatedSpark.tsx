@@ -33,8 +33,8 @@ const AnimatedSpark = () => (
       <Image
         src="/sparks.svg"
         alt="Sparkle"
-        width={40}
-        height={40}
+        width={20}
+        height={20}
         className="inline-block align-text-top"
         style={{ filter: "invert(1)" }}
       />
