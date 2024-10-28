@@ -196,14 +196,6 @@ const Platform = () => (
           className="m-10"
         />
       </div>
-      <div className="flex justify-center items-center mt-6 mb-16">
-        <Button
-          id="open-popup-2"
-          className="bg-emerald-500 hover:bg-emerald-600 text-white text-lg py-6 px-10 rounded-full"
-        >
-          Request Early Access
-        </Button>
-      </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <PlatformFeature
           icon={<Grape className="w-6 h-6 text-white" />}
@@ -268,11 +260,10 @@ const Platform = () => (
             description="Transform real purchase data into tailored recommendations that help your users achieve better outcomes without manual tracking or data entry."
           />
         </div>
-        <div className="flex justify-center items-center mt-6 mb-16">
+        <div className="flex justify-center items-center mt-16 mb-16">
           <Button
-            variant="outline"
-            id="open-popup-3"
-            className="mt-6 bg-transparent text-emerald-400 border-emerald-400 hover:bg-emerald-400 text-lg py-6 px-10 hover:text-black rounded-full"
+            id="open-popup-2"
+            className="bg-emerald-500 hover:bg-emerald-600 text-white text-lg py-6 px-10 rounded-full"
           >
             Request Early Access
           </Button>
