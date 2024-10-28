@@ -97,17 +97,17 @@ const Hero = () => (
       <p className="md:my-10 mt-20">
         <Salad className="w-40 h-40 inline-block stroke-[0.8] md:stroke-[1.2]" />
       </p>
-      <h2 className="text-3xl md:text-5xl text-white mb-0 font-bold">
-        Building the{" "}
+      <h2 className="text-3xl md:text-5xl text-white mb-4 font-bold">
+        The{" "}
         <span className="text-emerald-400 leading-tight">
           Intelligence Layer
         </span>{" "}
         for Personalized Nutrition
       </h2>
-      <p className="text-xl md:text-2xl text-gray-300 mt-6 mb-10 max-w-2xl mx-auto">
-        <span className="font-normal leading-tight">Powering</span>{" "}
-        <span className="text-emerald-400 leading-tight">Nutrition</span>{" "}
-        Intelligence <AnimatedSpark />
+      <p className="text-xl md:text-2xl text-gray-300 mt-6 mb-10 max-w-3xl mx-auto">
+        <span className="font-normal leading-tight">Connecting</span>{" "}
+        <span className="text-emerald-400 leading-tight">food choices</span> to
+        better health <AnimatedSpark />
       </p>
       <a href="#platform">
         <Button className="bg-emerald-500 hover:bg-emerald-600 text-white text-lg py-6 px-10 rounded-full">
