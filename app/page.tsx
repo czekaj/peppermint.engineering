@@ -146,14 +146,14 @@ const VisionMission = () => (
         <Card className="bg-gray-900 border border-emerald-400/20 rounded-lg overflow-hidden">
           <CardContent className="p-6">
             <h3 className="text-2xl font-semibold text-white mb-4">Mission</h3>
-            <p className="text-gray-300 mb-4">
+            <p className="text-gray-300 mb-4 font-bold">
               Our mission is to power the future of personalized nutrition by
               providing the intelligence infrastructure that wellness platforms
               need.
             </p>
             <p className="text-gray-300">
-              Through sophisticated AI and real purchase data analysis, we're
-              enabling the next generation of nutrition-driven innovations.
+              We're enabling the next generation of nutrition-driven innovations
+              through sophisticated AI and real purchase data analysis.
             </p>
           </CardContent>
         </Card>
@@ -214,33 +214,35 @@ const Platform = () => (
         />
       </div>
       <h3 className="text-3xl font-bold text-emerald-400 text-center mt-24 mb-12">
-        Our Platform Features
+        Our Platform Highlights
       </h3>
-      <div className="text-gray-300 mb-16">
-        <ul className="max-w-2xl mx-auto text-left list-none space-y-2">
+      <div className="text-gray-300 mb-32">
+        <ul className="max-w-2xl mx-auto text-left list-none space-y-3">
           <li className="flex items-center">
-            <span className="text-emerald-400 mr-2">•</span>
-            Purchase Data Intelligence - Transform grocery data into actionable
-            insights
+            <b>Purchase Data Intelligence</b>
+            <span className="text-emerald-400 mx-2">•</span> Transform grocery
+            data into actionable insights
           </li>
           <li className="flex items-center">
-            <span className="text-emerald-400 mr-2">•</span>
-            AI-Powered Guidance - Consistent, high-quality nutrition
-            recommendations
+            <b>AI-Powered Guidance</b>
+            <span className="text-emerald-400 mx-2">•</span> Consistent,
+            high-quality nutrition recommendations
           </li>
           <li className="flex items-center">
-            <span className="text-emerald-400 mr-2">•</span>
-            Developer-First API - Built by engineers, for engineers
+            <b>Developer-First API</b>
+            <span className="text-emerald-400 mx-2">•</span>Built by engineers,
+            for engineers
           </li>
           <li className="flex items-center">
-            <span className="text-emerald-400 mr-2">•</span>
-            White-Label Components - Beautiful, ready-to-use UI components
+            <b>White-Label Components</b>
+            <span className="text-emerald-400 mx-2">•</span> Beautiful,
+            ready-to-use UI components
           </li>
         </ul>
       </div>
 
       <div className="mt-16">
-        <h3 className="text-3xl font-bold text-emerald-400 text-center mb-8">
+        <h3 className="text-3xl font-bold text-emerald-400 text-center mb-16">
           Why Peppermint
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -260,7 +262,7 @@ const Platform = () => (
             description="Transform real purchase data into tailored recommendations that help your users achieve better outcomes without manual tracking or data entry."
           />
         </div>
-        <div className="flex justify-center items-center mt-16 mb-16">
+        <div className="flex justify-center items-center mt-24 mb-16">
           <Button
             id="open-popup-2"
             className="bg-emerald-500 hover:bg-emerald-600 text-white text-lg py-6 px-10 rounded-full"
