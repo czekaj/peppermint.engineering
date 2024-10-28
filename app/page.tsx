@@ -225,17 +225,23 @@ const Platform = () => (
         Our Platform Features
       </h3>
       <div className="text-gray-300 mb-16">
-        <ul className="list-disc list-inside space-y-2">
-          <li>
+        <ul className="max-w-2xl mx-auto text-left list-none space-y-2">
+          <li className="flex items-center">
+            <span className="text-emerald-400 mr-2">•</span>
             Purchase Data Intelligence - Transform grocery data into actionable
             insights
           </li>
-          <li>
+          <li className="flex items-center">
+            <span className="text-emerald-400 mr-2">•</span>
             AI-Powered Guidance - Consistent, high-quality nutrition
             recommendations
           </li>
-          <li>Developer-First API - Built by engineers, for engineers</li>
-          <li>
+          <li className="flex items-center">
+            <span className="text-emerald-400 mr-2">•</span>
+            Developer-First API - Built by engineers, for engineers
+          </li>
+          <li className="flex items-center">
+            <span className="text-emerald-400 mr-2">•</span>
             White-Label Components - Beautiful, ready-to-use UI components
           </li>
         </ul>
@@ -294,7 +300,7 @@ const Founder = () => (
           <h3 className="text-2xl font-semibold text-white mb-4">
             Lucas Czekaj
           </h3>
-          <p className="text-gray-300 mb-6 text-lg">
+          <p className="text-gray-300 mb-6 text-md">
             Previously led development of Instacart's Fresh Funds platform,
             architecting the foundation of the Instacart Health initiative that
             secured partnerships with Kaiser Permanente and Michelle Obama's
@@ -309,7 +315,7 @@ const Founder = () => (
           </p>
           <p className="flex md:justify-start justify-center">
             <a href="https://www.linkedin.com/in/lukaszczekaj/" target="_blank">
-              <Button className="bg-emerald-500 hover:bg-emerald-600 text-white rounded-full flex items-center space-x-2 py-6 px-6 text-lg">
+              <Button className="bg-emerald-500 hover:bg-emerald-600 text-white rounded-full flex items-center space-x-2 py-4 px-4 text-md">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -332,36 +338,39 @@ const Careers = () => (
   <section id="careers" className="py-20 bg-gray-900">
     <div className="container mx-auto px-4 text-center">
       <h2 className="text-4xl font-bold text-emerald-400 mb-6">
-        Join Our Mission
+        Pioneering Nutrition Intelligence
       </h2>
       <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-        Are you excited about the intersection of nutrition, AI, and personal
-        health? We'd love to hear from you. We're open to various forms of
-        collaboration, including:
+        We're architecting the intelligence layer that will power the next
+        century of personalized nutrition. While we're currently heads-down
+        building our core platform, we're always excited to connect with
+        visionary individuals who share our ambition to revolutionize wellness
+        through technology.
       </p>
       <ul className="text-gray-300 mb-6 max-w-md mx-auto text-left list-none">
         <li className="flex items-center mb-2">
           <span className="text-emerald-400 mr-2">•</span>
-          Advisory roles
+          Technical Advisors (AI/ML, Platform Architecture)
         </li>
         <li className="flex items-center mb-2">
           <span className="text-emerald-400 mr-2">•</span>
-          Consulting opportunities
+          Domain Experts (Nutrition Science, Digital Health)
         </li>
         <li className="flex items-center mb-2">
           <span className="text-emerald-400 mr-2">•</span>
-          Knowledge sharing
+          Strategic Partners (Wellness Platforms, Health Tech)
         </li>
         <li className="flex items-center mb-2">
           <span className="text-emerald-400 mr-2">•</span>
-          Potential future partnerships
+          Future Team Members (Post-Seed Round)
         </li>
       </ul>
       <p className="text-gray-300 mb-10 max-w-2xl mx-auto">
-        While we're not currently hiring for full-time positions, we believe in
-        the power of collaboration to drive innovation. If you have insights,
-        expertise, or ideas that could contribute to our mission, we'd be
-        thrilled to start a conversation.
+        If you're excited about building infrastructure that will transform how
+        the world approaches nutrition, we'd love to explore ways to
+        collaborate. We're particularly interested in connecting with
+        individuals who bring deep expertise in AI/ML, platform architecture, or
+        nutrition science.
       </p>
     </div>
   </section>
