@@ -491,7 +491,7 @@ const Footer = () => (
             id="open-popup-4"
             className="mt-6 bg-transparent text-emerald-400 border-emerald-400 hover:bg-emerald-400 hover:text-black rounded-full"
           >
-            Request a Consultation
+            Book an Intro Call
           </Button>
         </div>
         <div>
