@@ -23,10 +23,6 @@ import DemoRequestPopup from "@/components/DemoRequestPopup";
 import { Card, CardContent } from "@/components/ui/card";
 import AnimatedSpark from "@/components/AnimatedSpark";
 
-const AnimatedRocket = dynamic(() => import("@/components/AnimatedRocket"), {
-  ssr: false,
-});
-
 const Header = () => {
   return (
     <header className="absolute top-0 left-0 w-full z-10 py-6">
