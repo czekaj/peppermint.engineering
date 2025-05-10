@@ -33,18 +33,18 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Peppermint Engineering",
-  description: "Powering Nutrition Intelligence",
-  themeColor: "#000000", // This sets the browser theme color to black
+  title: "Peppermint: Nutrition Intelligence for Professionals",
+  description: "Empowering dietitians and nutritionists with automated access to client grocery purchase data for enhanced personalized care and better outcomes.",
+  themeColor: "#000000",
   openGraph: {
-    title: "Peppermint Engineering 🌱",
-    description: "Powering Nutrition Intelligence",
+    title: "Peppermint 🌱 | Professional Nutrition Intelligence",
+    description: "The platform providing dietitians with automated, verified client grocery purchase data (online & in-store) to revolutionize personalized nutrition.",
     images: [
       {
         url: "https://www.peppermint.engineering/images/preview.png",
         width: 1526,
         height: 948,
-        alt: "Peppermint Engineering",
+        alt: "Peppermint for Nutrition Professionals",
       },
     ],
     type: "website",

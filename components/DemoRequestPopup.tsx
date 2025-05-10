@@ -18,11 +18,10 @@ const DemoRequestPopup: React.FC = () => {
         </button>
 
         <h2 className="text-2xl font-bold text-emerald-400 mb-2">
-          Partner with Peppermint
+          Sign up for Early Access!
         </h2>
         <p className="text-gray-300 mb-6">
-          Access our nutrition intelligence infrastructure and power the next
-          generation of personalized wellness solutions 🌱
+          See how Peppermint empowers dietitians and nutritionists with automated client grocery purchase data.
         </p>
 
         <form
@@ -46,54 +45,64 @@ const DemoRequestPopup: React.FC = () => {
           />
           <Input
             type="text"
-            name="organization"
-            placeholder="Company"
+            name="practice_or_company_name"
+            placeholder="Practice / Company Name"
             className="bg-gray-800 text-white border-gray-700 rounded-xl"
+            required
           />
 
           <select
-            name="partnership_type"
+            name="professional_role"
             className="w-full bg-gray-800 text-white border-gray-700 rounded-xl py-2 px-3"
             required
           >
-            <option value="">Choose Partnership Interest</option>
-            <option value="platform_integration">Platform Integration</option>
-            <option value="wellness_provider">Digital Wellness Provider</option>
-            <option value="health_tech">Health Tech Company</option>
-            <option value="retail_partner">Retail/Grocery Partner</option>
-            <option value="venture_capital">Venture Capital</option>
+            <option value="">I am a...</option>
+            <option value="dietitian_nutritionist_practice">Dietitian/Nutritionist (Private Practice/Clinic)</option>
+            <option value="dietitian_software_provider">Professional Nutrition Software Provider</option>
+            <option value="health_professional_other">Other Health Professional Interested in Nutrition Data</option>
           </select>
 
-          <select
-            name="integration_needs"
-            className="w-full bg-gray-800 text-white border-gray-700 rounded-xl py-2 px-3"
-            required
-          >
-            <option value="">Choose Primary Integration Need</option>
-            <option value="purchase_data">Purchase Data Access</option>
-            <option value="nutrition_api">Nutrition Intelligence API</option>
-            <option value="ml_insights">ML-Powered Insights</option>
-            <option value="white_label">White-Label Solutions</option>
-            <option value="custom">Custom Infrastructure</option>
-            <option value="other">Other (N/A)</option>
-          </select>
+          <div>
+            <label htmlFor="top_retailer_1" className="block text-sm font-medium text-gray-300 mb-1">
+              Top 3 online/loyalty grocery retailers your clients use most:
+            </label>
+            <Input
+              type="text"
+              name="top_retailer_1"
+              id="top_retailer_1"
+              placeholder="1. Primary Retailer (e.g., Walmart)"
+              className="bg-gray-800 text-white border-gray-700 rounded-xl mb-2"
+              required
+            />
+            <Input
+              type="text"
+              name="top_retailer_2"
+              placeholder="2. Secondary Retailer"
+              className="bg-gray-800 text-white border-gray-700 rounded-xl mb-2"
+            />
+            <Input
+              type="text"
+              name="top_retailer_3"
+              placeholder="3. Tertiary Retailer"
+              className="bg-gray-800 text-white border-gray-700 rounded-xl"
+            />
+          </div>
 
           <textarea
-            name="message"
-            placeholder="Tell us about your platform integration goals"
-            className="w-full bg-gray-800 text-white border-gray-700 rounded-xl py-2 px-3 h-24"
-            required
+            name="additional_comments" // Changed from interest_details
+            placeholder="Any additional comments or specific interests? (Optional)"
+            className="w-full bg-gray-800 text-white border-gray-700 rounded-xl py-2 px-3 h-20" // Reduced height slightly
           ></textarea>
 
           <Button
             type="submit"
             className="w-full bg-emerald-500 hover:bg-emerald-600 text-white py-2 px-4 rounded-xl transition-colors"
           >
-            Request Early Access
+            Submit
           </Button>
 
           <p className="text-gray-400 text-sm text-center">
-            Currently prioritizing strategic platform partners
+            Our pilot program focuses primarily on Kroger/Smith's. Your retailer input helps guide our expansion!
           </p>
         </form>
       </div>
